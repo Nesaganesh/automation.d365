@@ -1,0 +1,37 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  CI: true
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
+- script: npm install
+  displayName: 'Install dependencies'
+
+- script: npx playwright install-deps
+  displayName: 'Install Playwright dependencies'
+
+- script: npx playwright test
+  displayName: 'Run Playwright tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/test-results/*.xml'
+    mergeTestResults: true
+    testRunTitle: 'Playwright Tests'
+  condition: succeededOrFailed()
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'playwright-report'
+    publishLocation: 'pipeline'
+  displayName: 'Publish Playwright report'

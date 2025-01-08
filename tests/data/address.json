@@ -1,0 +1,26 @@
+[
+    {
+    "email": "nesa246@gmail.com",
+    "password": "Test123$",
+    "firstName": "Nesa",
+    "lastName": "Ganesh",
+    "company": "Defra",
+    "address1": "9 fitzmaurice road",
+    "address2": "",
+    "city": "ipswich",
+    "postCode": "ip22ax",
+    "region": "3529"
+  },
+  {
+    "email": "nesa2488@gmail.com",
+    "password": "Test1234$",
+    "firstName": "Nesa",
+    "lastName": "Ganesh",
+    "company": "Defra",
+    "address1": "10 fitzmaurice road",
+    "address2": "",
+    "city": "ipswich",
+    "postCode": "ip22ax",
+    "region": "3529"
+  }
+]
