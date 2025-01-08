@@ -2,6 +2,12 @@
 
 This project contains automated tests for Dynamics 365 using Playwright and TypeScript. The tests are designed to verify various functionalities within the Dynamics 365 environment.
 
+This project in future can also have Automation for 
+E2E testing
+Cross Browser Testing
+
+
+
 ## Table of Contents
 
 - [Installation](#installation)
