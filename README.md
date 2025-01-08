@@ -35,3 +35,10 @@ Create a `.env` file in the root directory of the project and add the following 
 
 ```env
 DYN365_ORGURL=https://your-dynamics-365-url
+DYN365_CLIENTID: ''
+DYN365_CLIENTSECRET: ''
+DYN365_USERNAME: ''
+DYN365_PASSWORD: ''
+
+
+
